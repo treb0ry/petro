@@ -1,0 +1,109 @@
+footer {
+  font-size: 0.875em;
+  line-height: 1.5625em;
+  margin: 0 0.9375em;
+  padding-bottom: 1em;
+  margin-bottom: 0;
+  margin-top: 2em;
+  @media (min-width: 34.75em) {
+    margin: 0 auto;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  hr {
+    margin: 2em 0em;
+  }
+  .phone {
+    text-decoration: none;
+    color: $text-color;
+    font-size: 1.875em;
+    line-height: 1.9375em;
+    font-weight: bold;
+    @media (min-width: 34.75em) {
+      font-size: 2.5625em;
+    }
+  }
+}
+.footer-banner {
+  background-image: url("../images/banner_mail1.png");
+  width: 19.16em;
+  height: 19.875em;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+  margin: 0 auto;
+  position: relative;
+  @media (min-width: 34.75em) {
+    background-image: url("../images/banner_mail 1des.png");
+    width: 39.7142857em;
+    height: 6.62785714em;
+  }
+  button {
+    font-family: "Jost", serif;
+    font-size: 0.785714286em;
+    line-height: 1em;
+    background: linear-gradient(261.66deg, #eb7f00 17.58%, #f77138 67.08%);
+    background-size: 150%;
+    background-position: left;
+    box-shadow: 0px 6px 29px -4px rgba(255, 175, 82, 0.6);
+    border-radius: 2px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding: 0.89em 2.85em;
+    bottom: 17px;
+    left: 62px;
+    transition: border-radius 0.2s, background-position 0.2s;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-position: right;
+    }
+    @media (min-width: 34.75em) {
+      left: 442px;
+      padding: 0.49em 0.65em;
+      font-size: 0.742857em;
+      bottom: 31px;
+    }
+  }
+  svg {
+    margin-left: 0.5em;
+  }
+}
+.inform {
+  font-size: 0.6375em;
+  @media (min-width: 34.75em) {
+    font-size: 0.9375em;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    margin-left: 1em;
+  }
+  .telegram {
+    transition: fill 0.2s;
+  }
+  svg {
+    width: 32px;
+    height: 32px;
+    &:hover .telegram,
+    &:focus .telegram {
+      fill: #3face2;
+    }
+    @media (min-width: 34.75em) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}

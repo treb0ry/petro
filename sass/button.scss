@@ -1,0 +1,20 @@
+.button {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.15em;
+  color: white;
+  background-color: #e74b4b;
+  border-radius: 4px;
+  border: none;
+  padding: 1.25em 1.91em;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  margin: 1em 0;
+  cursor: pointer;
+  transition: border-radius 0.2s, background-color 0.2s;
+  &:hover,
+  &:focus {
+    border-radius: 0px;
+    background-color: #ef1a1a;
+  }
+}

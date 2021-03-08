@@ -1,0 +1,74 @@
+@import "reset";
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+$text-color: #414249;
+$font-f: "Arial", serif;
+
+body {
+  font-family: $font-f;
+  text-align: center;
+  color: $text-color;
+  background-color: #f8f3f3;
+}
+
+h1 {
+  font-size: 1.125em;
+  font-weight: 400;
+  line-height: 1.375em;
+  font-style: normal;
+}
+h2 {
+  font-weight: bold;
+  font-size: 1.5em;
+  font-style: normal;
+  line-height: 1.875em;
+  margin: 0;
+  padding: 0;
+}
+hr {
+  background-color: #dbdbdb;
+  border: none;
+  height: 1px;
+  margin: 1em 1.625em;
+}
+p {
+  font-size: 0.9375em;
+  line-height: 1.5625em;
+}
+.content {
+  padding: 0 1.625em;
+  @media (min-width: 34.75em) {
+    padding: 0 1.125em;
+  }
+}
+section {
+  margin: 1em 0;
+}
+article {
+  text-align: left;
+  margin: 0 0.9375em;
+  background-color: white;
+  border-radius: 15px;
+  padding: 0 0 1em 0;
+  @media (min-width: 34.75em) {
+    max-width: 34.75em;
+    margin: 0 auto;
+  }
+}
+img {
+  width: 100%;
+}
+header {
+  padding-top: 2em;
+}
+a[href^="tel:"] {
+  color: $text-color;
+  transition: color 0.1s;
+  &:hover,
+  &:focus {
+    color: lighten($text-color, 10%);
+  }
+}
+@import "button";
+@import "cottage";
+@import "presentation";
+@import "footer";

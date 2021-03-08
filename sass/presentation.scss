@@ -1,0 +1,38 @@
+.presentation {
+  p {
+    font-style: italic;
+    line-height: 1.28125em;
+    font-size: 0.875em;
+    margin: 0;
+  }
+  .button.desktop {
+    margin-top: 2em;
+    display: none;
+    @media (min-width: 34.75em) {
+      display: block;
+    }
+  }
+  .button.mobile {
+    @media (min-width: 34.75em) {
+      display: none;
+    }
+  }
+}
+.presentation-img {
+  margin-top: 1.875em;
+  @media (min-width: 34.75em) {
+    width: 14.3125em;
+  }
+}
+.presentation-img.big {
+  @media (min-width: 34.75em) {
+    width: 100%;
+  }
+}
+.flex-content {
+  @media (min-width: 34.75em) {
+    display: flex;
+    align-items: flex-end;
+    margin-top: -1em;
+  }
+}

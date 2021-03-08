@@ -1,0 +1,74 @@
+.cottage {
+  p {
+    margin-top: 1.25em;
+  }
+  .header-img {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .phone {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9375em;
+    line-height: 1.1575;
+    margin-top: 1.25em;
+    @media (min-width: 34.75em) {
+      align-items: center;
+    }
+
+    a {
+      .svg circle {
+        transition: fill 0.2s, stroke 0.2s;
+      }
+      .svg path {
+        transition: fill 0.2s;
+      }
+
+      &:hover svg circle,
+      &:focus svg circle {
+        fill: white;
+        stroke: #e74b4b;
+      }
+      &:hover svg path,
+      &:focus svg path {
+        fill: #e74b4b;
+      }
+      text-decoration: none;
+    }
+    div {
+      margin-top: 0;
+      margin-left: 0.8125em;
+      width: 12em;
+      @media (min-width: 34.75em) {
+        width: auto;
+      }
+      a {
+        font-weight: bold;
+        padding-right: 50px;
+      }
+    }
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      font-size: 0.9375em;
+      line-height: 1.5625em;
+      display: flex;
+      align-items: center;
+      margin: 0.625em 0;
+      div + div {
+        padding-left: 0.8125em;
+      }
+      div {
+        margin: 0;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
